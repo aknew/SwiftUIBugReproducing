@@ -24,26 +24,13 @@ struct ContentView: View {
     @State var field: String = "Test string"
     
     var body: some View {
-        //ScrollView(.vertical) {
-            VStack() {
-                Text("Hello, world!")
-//                List(array) { sign in
-//                // ForEach(array) { sign in
-//                    Text("\(sign.id): \(sign.value)")
-//                }
-                //ExternalList()
-                Text("I am test app")
-                Text("I am test app")
-                Text("I am test app")
-                TextField("", text: $field)
-                Text("I am test app")
-                Text("I am test app")
-                Text("I am test app")
-                Text("I am test app")
-                Text("I am test app 10")
-                Text("I am test app")
-            }
-        //}
+        List {
+                List(array) { sign in
+                // ForEach(array) { sign in
+                    Text("\(sign.id): \(sign.value)")
+                }
+                ExternalList()
+        }
     }
 }
 
