@@ -24,13 +24,13 @@ struct ContentView: View {
     @State var field: String = "Test string"
     
     var body: some View {
-        ScrollView(.vertical) {
+        //ScrollView(.vertical) {
             VStack() {
                 Text("Hello, world!")
-                List(array) { sign in
-                // ForEach(array) { sign in
-                    Text("\(sign.id): \(sign.value)")
-                }
+//                List(array) { sign in
+//                // ForEach(array) { sign in
+//                    Text("\(sign.id): \(sign.value)")
+//                }
                 //ExternalList()
                 Text("I am test app")
                 Text("I am test app")
@@ -40,9 +40,10 @@ struct ContentView: View {
                 Text("I am test app")
                 Text("I am test app")
                 Text("I am test app")
-                Text("I am test app") // I get "Extra argument in call" if I use 10+ components + List. It is not important which components are used.
+                Text("I am test app 10")
+                Text("I am test app")
             }
-        }
+        //}
     }
 }
 
