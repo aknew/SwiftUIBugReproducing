@@ -21,16 +21,26 @@ struct ContentView: View {
         Sign(id: 4, value: "four")
     ]
     
+    @State var field: String = "Test string"
+    
     var body: some View {
         ScrollView(.vertical) {
             VStack() {
                 Text("Hello, world!")
-                Text("I am test app")
                 List(array) { sign in
                 // ForEach(array) { sign in
                     Text("\(sign.id): \(sign.value)")
                 }
-                ExternalList()
+                //ExternalList()
+                Text("I am test app")
+                Text("I am test app")
+                Text("I am test app")
+                TextField("", text: $field)
+                Text("I am test app")
+                Text("I am test app")
+                Text("I am test app")
+                Text("I am test app")
+                Text("I am test app") // I get "Extra argument in call" if I use 10+ components + List. It is not important which components are used.
             }
         }
     }
