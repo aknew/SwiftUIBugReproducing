@@ -9,12 +9,7 @@ import SwiftUI
 
 struct ExternalList: View {
     
-    let array = [
-        Sign(id: 1, value: "one"),
-        Sign(id: 2, value: "two"),
-        Sign(id: 3, value: "three"),
-        Sign(id: 4, value: "four")
-    ]
+    let array = sampleSignArray()
     
     var body: some View {
         VStack {
